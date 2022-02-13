@@ -14,9 +14,10 @@
 
 ### Screenshot
 
+![planets2](https://user-images.githubusercontent.com/45755270/153743270-72cd92ce-3e92-4a8c-9709-c710f7d9cddb.png)
+
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process

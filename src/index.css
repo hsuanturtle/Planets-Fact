@@ -1,0 +1,384 @@
+/* GLOBAL */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #070724;
+}
+
+h1 {
+  font-family: "Antonio", sans-serif;
+  font-size: 8rem;
+}
+p {
+  font-size: 1.2rem;
+}
+
+/* HOME */
+.home-title{
+  font-size:3rem;
+  text-align:center;
+  margin-top:1rem;
+}
+.solar-system{
+  width:60vw;
+  height:60vw;
+  margin:0 auto;
+}
+.sun{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  height:5rem;
+  width:5rem;
+}
+.mercury{
+  transform: rotate(0deg) translateX(10vw);
+  height:1.2rem;
+  width:1.2rem;
+}
+.venus{
+  transform: rotate(0deg) translateX(15vw);
+  height:1.5rem;
+  width:1.5rem;
+}
+.earth{
+  height:1.8rem;
+  width:1.8rem;
+  transform: rotate(0deg) translateX(20vw);
+}
+.mars {
+	transform: rotate(0deg) translateX(25vw);
+	width: 2rem;
+	height: 2rem;
+}
+
+.jupiter {
+	transform: rotate(0deg) translateX(30vw);
+	width: 3.5rem;
+	height: 3.5rem;
+	
+}
+
+.saturn {
+	transform: rotate(0deg) translateX(33vw);
+	width: 4.8rem;
+	height: 4.8rem;
+	
+}
+.uranus {
+	transform: rotate(0deg) translateX(33vw);
+	width: 5rem;
+	height: 5rem;	
+}
+
+.neptune {
+	transform: rotate(0deg) translateX(33vw);
+	width: 4rem;
+	height: 4rem;
+}
+img{
+  width:5rem;
+  height:5rem;
+  background-color:transparent;
+  transition:all linear 0.3s;
+  border-radius:50%;
+}
+img:hover{
+  box-shadow:10px 10px 30px rgba(255,255,255);
+}
+.circle{
+  -webkit-animation:rotation 6s linear 0s infinite normal none;
+  -moz-animation: rotation 6s linear 0s infinite normal none;
+  -ms-animation: rotation 6s linear 0s infinite normal none;
+  -o-animation: rotation 6s linear 0s infinite normal none;
+  animation: rotation 6s linear 0s infinite normal none;
+  background-color:transparent;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.circle-container1 { /*Mercury*/
+	animation: rotation 6s linear 0s infinite normal none;
+}
+
+.circle-container2 { /*Venus*/
+	animation: rotation 8s linear 0s infinite normal none;  
+}
+
+.circle-container3 { /*Earth*/
+	animation: rotation 10s linear 0s infinite normal none;
+}
+
+.circle-container4 { /*Mars*/
+	animation: rotation 12s linear 0s infinite normal none;
+}
+
+.circle-container5 { /*Jupiter*/
+	animation: rotation 15s linear 0s infinite normal none;
+}
+
+.circle-container6 { /*Saturn*/
+	animation: rotation 18s linear 0s infinite normal none;
+}
+
+.circle-container7 { /*Uranus*/
+	animation: rotation 20s linear 0s infinite normal none;
+}
+
+.circle-container8 { /*Neptune*/
+	animation: rotation 30s linear 0s infinite normal none;  
+}
+@-webkit-keyframes rotation {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
+@-moz-keyframes rotation {
+	from {
+		-moz-transform: rotate(0deg);
+	}
+	to {
+		-moz-transform: rotate(-360deg);
+	}
+}
+
+@-ms-keyframes rotation {
+	from {
+		-ms-transform: rotate(0deg);
+	}
+	to {
+		-ms-transform: rotate(-360deg);
+	}
+}
+
+@-o-keyframes rotation {
+	from {
+		-o-transform: rotate(0deg);
+	}
+	to {
+		-o-transform: rotate(-360deg);
+	}
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+/* NAVBAR */
+.navbar {
+  border-bottom: 1px solid #838391;
+  z-index:10;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-family: "Antonio", sans-serif;
+}
+
+.nav-item {
+  font-family: "Antonio", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2;
+  padding: 0 2rem;
+}
+
+.nav-link {
+  color: #fff;
+  transition: all linear 0.3s;
+}
+.nav-link:hover {
+  color: #838391;
+}
+
+/* TABS */
+.tabs {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.categorySelector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.content-btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 0.8rem;
+  border: none;
+  padding: 1rem;
+  font-family: "Spartan", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all linear 0.3s;
+}
+.content-btn:hover {
+  background-color: #838391;
+}
+.active-btn {
+  background-color: #419ebb;
+}
+
+/* DESCRIPTION */
+.description {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: "Spartan", sans-serif;
+}
+.image-section {
+  padding: 6rem;
+}
+.image-section img {
+  animation-duration: 1s;
+}
+.detail-section {
+  margin-top: 1rem;
+}
+.name {
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 1.5;
+}
+.content {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+.link {
+  color: #838391;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+.link a {
+  margin-left: 0.6rem;
+  color: #838391;
+  font-weight: bold;
+}
+
+/* CHARACTERISTIC */
+.character-section {
+  padding: 2rem;
+}
+.detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid #838391;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+}
+.character-title {
+  color: #838391;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.character-data {
+  text-transform: uppercase;
+  font-family: "Antonio", sans-serif;
+  letter-spacing: 2;
+  font-size: 1.8rem;
+}
+
+/* DESKTOP-SIZE */
+@media only screen and (min-width: 800px) {
+  /* HOME */
+  .sun{
+    height:8rem;
+    width:8rem;
+  }
+  .mercury{
+    transform: rotate(0deg) translateX(5vw);
+    height:2rem;
+    width:2rem;
+  }
+  .venus{
+    transform: rotate(0deg) translateX(10vw);
+    height:2.5rem;
+    width:2.5rem;
+  }
+  .earth{
+    height:2rem;
+    width:2rem;
+    transform: rotate(0deg) translateX(13vw);
+  }
+  .mars {
+    transform: rotate(0deg) translateX(15vw);
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .jupiter {
+    transform: rotate(0deg) translateX(20vw);
+    width: 3.5rem;
+    height: 3.5rem;
+    
+  }
+  
+  .saturn {
+    transform: rotate(0deg) translateX(25vw);
+    width: 4.8rem;
+    height: 4.8rem;
+    
+  }
+  .uranus {
+    transform: rotate(0deg) translateX(28vw);
+    width: 5.5rem;
+    height: 5.5rem;	
+  }
+  
+  .neptune {
+    transform: rotate(0deg) translateX(28vw);
+    width: 4rem;
+    height: 4rem;
+  }
+
+
+  /* DESCRIPTION */
+  .description {
+    flex-direction: row;
+  }
+  .image-section {
+    width: 150%;
+  }
+  img {
+    width: 290px;
+    height: 290px;
+  }
+  .name {
+    font-size: 6rem;
+  }
+  .content {
+    font-size: 1rem;
+  }
+
+  /* CHARACTERISTIC */
+  .character-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin: 0 5rem;
+  }
+  .detail {
+    flex-direction: column;
+  }
+}
